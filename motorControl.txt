@@ -1,0 +1,14 @@
+10 dim BUTTON as pin rd10 for digital input
+20 dim ENA as pin rd7 for digital output
+30 dim IN1 as pin rd2 for digital output
+40 dim IN2 as pin rd3 for digital output
+50 while 1 do
+60      let ENA = 1
+70      if BUTTON then
+80          let IN1 = 1
+90          let IN2 = 0
+100     else
+110         let IN1 = 0
+120         let IN2 = 1
+130     endif
+140 endwhile
